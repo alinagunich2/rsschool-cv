@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,23 +12,26 @@
     <head>
         <nav class="main-nav">
             <ul class="site-navigation">
-                <li class="site-navigation-item"><a href="#">Contacts</a></li>
-                <li class="site-navigation-item"><a href="#">Summary</a></li>
-                <li class="site-navigation-item"><a href="#">Skils</a></li>
-                <li class="site-navigation-item"><a href="#">Code</a></li>
-                <li class="site-navigation-item"><a href="#">Education</a></li>
-                <li class="site-navigation-item"><a href="#">English</a></li>
+                <li class="site-navigation-item"><a class="nav-a" href="#">Contacts</a></li>
+                <li class="site-navigation-item"><a class="nav-a" href="#">Summary</a></li>
+                <li class="site-navigation-item"><a class="nav-a" href="#">Skils</a></li>
+                <li class="site-navigation-item"><a class="nav-a" href="#">Code</a></li>
+                <li class="site-navigation-item"><a class="nav-a" href="#">Education</a></li>
+                <li class="site-navigation-item"><a class="nav-a" href="#">English</a></li>
             </ul>
         </nav>
     </head>
     <main class="main-item">
         <section class="user">
-<img src="photo1.jpg" alt="my photo">
-<h1 class="name">Alina Gunich</h1>
+<img src="photo1.jpg" alt="my photo" width="250" height="250">
+<div class="autor">
+<h1 class="name">Alina Gunich
+</h1>
 <p class="vacancy">junior front-end developer</p>
+</div>
         </section>
         <section class="about-myself">
-            <ul>
+            <ul class="ul-about-myself">
                 <li class="sections">
                     <h2 class="section">Contacts</h2>
                     <ul class="contact-items">
@@ -60,33 +64,29 @@
                     <h2 class="section">Skils</h2>
                     <ul class="skill">
                         <li class="skills">
-                            <h3>Web-development:</h3><span class="color">HTML5, CSS3, JS</span>
+                            <h3 class="bevofe">Web-development:</h3><span class="color">HTML5, CSS3, JS</span>
                         </li>
                         <li class="skills">
-                            <h3>Version control:</h3><span class="color">GIT, Github</span>
+                            <h3 class="bevofe">Version control:</h3><span class="color">GIT, Github</span>
                         </li>
                         <li class="skills">
-                            <h3>Graphics:</h3><span class="color">Figma</span>
+                            <h3 class="bevofe">Graphics:</h3><span class="color">Figma</span>
                         </li>
                     </ul>
                     </li>
                 <li class="sections">
                     <h2 class="section">Code</h2>
-                    <pre>
-                        function Vklad (SumVkl, ProsS, WantSum){
-
-                            let i = 1
-                            while(true){
-                                let Prose=SumVkl*ProsS;
-                                SumVkl=Prose+SumVkl;
-                                if(SumVkl>=WantSum) {
-                                    console.log(i)
-                                    break;
-                                }
-                                i++
-                            }
-                        }
-                        Vklad(1000,0.07,1300)
+                    <pre class="code">
+     function Vklad (SumVkl, ProsS, WantSum){
+     let i = 1
+     while(true){
+     let Prose=SumVkl*ProsS;
+     SumVkl=Prose+SumVkl;
+     if(SumVkl>=WantSum) {
+     console.log(i)
+     break; }
+     i++} }
+     Vklad(1000,0.07,1300)
                     </pre>
                     </li>
                 <li class="sections">

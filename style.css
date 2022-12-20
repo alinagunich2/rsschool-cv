@@ -1,0 +1,122 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #163152;
+    margin: 0;
+    width: 1400px;
+}
+
+.site-navigation{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    background-color: blueviolet;
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-right: 50px;
+}
+.site-navigation-item{
+    list-style-type: none;
+}
+.nav-a {
+    text-decoration: none;
+    color: #fefefe;
+    transition: color 0.5s;
+}
+a:hover{
+    color: #4d2323;
+}
+.user{
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+    border-bottom: 10px solid rgb(105, 99, 110);
+    padding-bottom: 20px;
+}
+.main-item{
+    width: 1000px;
+    margin: 0 auto;
+}
+img{
+    border-radius: 150px;
+}
+.autor{
+    align-self: center;
+}
+.name{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+.vacancy{
+    margin: 0;
+    text-transform: uppercase;
+}
+.name::before {
+    content: ""; /* создаём инлайн объект */ /* преобразуем его в блочный */
+    position: absolute; /* включаем асболютное позиционирование */
+    top: 30px; /*отступ будет 0 пикселей от верхней точки блока */
+    width: 100px; /* блок займёт по ширине 100% ширины родительского */
+    height: 2px; /* высота самого блока */
+    background: blueviolet; /* задаём нужный цвет фоном */
+    left: 65px;
+    }
+ul{
+    list-style: none;
+    padding: 0;
+}
+h2{
+    color: blueviolet;
+}
+h3, .bevofe{
+    display: inline;
+    font-weight: normal;
+}
+.bevofe{
+    position: relative;
+    padding-left: 30px;
+}
+.bevofe::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #829985;
+}
+.color{
+    color: blueviolet;
+    text-decoration: none;
+}
+.code{
+    font-size: 14px;
+}
+.main-footer{
+    background-color: blueviolet;
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #fefefe;
+}
+.ul-about-myself{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+.sections{
+    width: 490px;
+    border-bottom: 3px solid blueviolet;
+}
+.sections:nth-child(5){
+    border-bottom: none;
+}
+.sections:nth-child(6){
+    border-bottom: none;
+}

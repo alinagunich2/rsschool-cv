@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <img src="./img/photo.jpg" alt="photo">
+            <img class="photo" src="./img/photo.jpg" alt="photo">
             <div class="header__container">
+                
                 <h1 class="header-container__title">Alina Korotyshevskaya</h1>
                 <p class="header-container__text">Frontend-developer</p>
                 <div class="header-container__data">
                     <p>alinka.gunich9@gmail.com</p>
                     <p>+375 (29) 748-25-11</p>
-                    <p>Минск</p>
+                    <p>Minsk</p>
                 </div>
             </div>
            </header>
@@ -24,7 +25,7 @@
             <div class="main__content">
                 <section class="about">
                     <h2 class="about__title title">About me</h2>
-                    <p class="about__text">I am purposeful and responsible with an active life position, high communication skills and a responsible approach to work. I have good knowledge in <span>Angular, React (I have many projects)</span> and constantly strive to expand my professional horizons. I am distinguished by my ability to quickly learn new technologies and development tools.
+                    <p class="about__text">I am purposeful and responsible with an active life position, high communication skills and a responsible approach to work. I have good knowledge in <b>Angular, React (I have many projects)</b> and constantly strive to expand my professional horizons. I am distinguished by my ability to quickly learn new technologies and development tools.
                         Thank you for considering my candidacy. I hope to have the opportunity to discuss options for cooperation.</p>
                 </section>
                 <section class="portfolio">
@@ -42,7 +43,7 @@
                         <li><a href="https://github.com/alinagunich2/react-quize">https://github.com/alinagunich2/react-quize</a></li>
                     </ul>
                     <h3 class="portfolio__subtitle subtitle">React and Redux:</h3>
-                    <ul>
+                    <ul class="portfolio__list list">
                         <li><a href="#">Стартап (по запросу)</a></li>
                         <li><a href="https://github.com/alinagunich2/angular-flower_shop">https://github.com/alinagunich2/angular-flower_shop</a></li>
                         <li><a href="https://github.com/alinagunich2/angular-articles">https://github.com/alinagunich2/angular-articles</a></li>
@@ -73,7 +74,7 @@
                                 <h3 class="experience__subtitle subtitle">IT (Startup)</h3>
                                 <span class="experience__date">Jan. 2024</span>
                             </div>
-                            <div class="experience__place place">Remotely</div>
+                            <span class="experience__place place">Remotely</span>
                             <ul class="experience__list list">
                                 <li>participation in team development of a project using Angular;</li>
                                 <li>I professionally use Git to control code versions in a team;</li>
@@ -186,7 +187,7 @@
                                 <span class="experience__date">May 2018 - Nov. 2022</span>
                             </div>
                             <span class="experience__place place">OJSC "Belagroprombank"</span>
-                            <ul>
+                            <ul class="portfolio__list list">
                                 <li>advised clients on all banking products; </li>
                                 <li>sold additional banking services; </li>
                                 <li>made calls to a database of potential clients to offer services;</li>
@@ -277,10 +278,11 @@
            </div>
            </main>
            <footer>
-            <a href="https://github.com/alinagunich2">https://github.com/alinagunich2</a>
             <a href="https://app.rs.school">
-                <img src="./img/logo.png" alt="logo">
+                <img class="logo" src="./img/logo.png" alt="logo">
             </a>
+            <a href="https://github.com/alinagunich2">https://github.com/alinagunich2</a>
+            
            </footer>
     </div>
 </body>

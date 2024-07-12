@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" type="image/png" href="./img/icon.png" />
+    <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -20,13 +22,13 @@
                 <a href="#" class="menu__link text">About the shelter</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link text">Our pets</a>
+                <a href="pets.html" class="menu__link text">Our pets</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link text">Help the shelter</a>
+                <a href="#help" class="menu__link text">Help the shelter</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link text">Contacts</a>
+                <a href="#contacts" class="menu__link text">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -42,11 +44,16 @@
                 extremely wide and open heart. He or she will love you more than
                 anybody else in the world, you will see! Make a friend
               </p>
-              <button class="not-only__btn btn btn-color">Make a friend</button>
+              <a href="#friends" class="not-only__btn btn btn-color"
+                >Make a friend</a
+              >
             </div>
             <div class="not-only__img">
               <img src="./img/not-only.png" alt="not-only" />
             </div>
+          </div>
+          <div class="not-only__image _ibg">
+            <img src="img/bg-main.jpg" alt="cover" />
           </div>
         </section>
         <section class="page__about about section-padding">
@@ -73,52 +80,81 @@
             </div>
           </div>
         </section>
-        <section class="page__friends friends section-padding">
+        <section class="page__friends friends section-padding" id="friends">
           <div class="friends__container _container">
             <h2 class="friends__title title">
               Our friends who are looking for a house
             </h2>
-            <ul class="frends__items">
-              <li class="frends__item item-frends">
-                <img
-                  class="item-frends__img"
-                  src="./img/frends-card/01.png"
-                  alt="Katrine"
-                />
-                <h3 class="item-frends__title title-name-card">Katrine</h3>
-                <button class="item-frends__btn btn btn-translat">
-                  Learn more
-                </button>
-              </li>
-              <li class="frends__item item-frends">
-                <img
-                  class="item-frends__img"
-                  src="./img/frends-card/02.png"
-                  alt="Jennifer"
-                />
-                <h3 class="item-frends__title title-name-card">Jennifer</h3>
-                <button class="item-frends__btn btn btn-translat">
-                  Learn more
-                </button>
-              </li>
-              <li class="frends__item item-frends">
-                <img
-                  class="item-frends__img"
-                  src="./img/frends-card/03.png"
-                  alt="Woody"
-                />
-                <h3 class="item-frends__title title-name-card">Woody</h3>
-                <button class="item-frends__btn btn btn-translat">
-                  Learn more
-                </button>
-              </li>
-            </ul>
-            <button class="frends__btn btn btn-color">
+            <div class="frends__items-content">
+              <button class="pagination pagination-back">
+                <div class="pagination-cont">
+                  <svg
+                    width="14"
+                    height="6"
+                    viewBox="0 0 14 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+                  </svg>
+                </div>
+              </button>
+              <ul class="frends__items">
+                <li class="frends__item item-frends">
+                  <img
+                    class="item-frends__img"
+                    src="./img/frends-card/01.png"
+                    alt="Katrine"
+                  />
+                  <h3 class="item-frends__title title-name-card">Katrine</h3>
+                  <button class="item-frends__btn btn btn-translat">
+                    Learn more
+                  </button>
+                </li>
+                <li class="frends__item item-frends">
+                  <img
+                    class="item-frends__img"
+                    src="./img/frends-card/02.png"
+                    alt="Jennifer"
+                  />
+                  <h3 class="item-frends__title title-name-card">Jennifer</h3>
+                  <button class="item-frends__btn btn btn-translat">
+                    Learn more
+                  </button>
+                </li>
+                <li class="frends__item item-frends">
+                  <img
+                    class="item-frends__img"
+                    src="./img/frends-card/03.png"
+                    alt="Woody"
+                  />
+                  <h3 class="item-frends__title title-name-card">Woody</h3>
+                  <button class="item-frends__btn btn btn-translat">
+                    Learn more
+                  </button>
+                </li>
+              </ul>
+              <button class="pagination pagination-next">
+                <div class="pagination-cont">
+                  <svg
+                    width="14"
+                    height="6"
+                    viewBox="0 0 14 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+            <a href="pets.html" class="frends__btn btn btn-color">
               Get to know the rest
-            </button>
+            </a>
           </div>
         </section>
-        <section class="page__help help section-padding">
+        <section class="page__help help section-padding" id="help">
           <div class="help__container _container">
             <h2 class="help__title title">How you can help our shelter</h2>
             <ul class="help__items">
@@ -128,6 +164,7 @@
                   src="./img/help-card/01.svg"
                   alt="Pet food"
                 />
+
                 <h3 class="item-help__title title-name-card">Pet food</h3>
               </li>
               <li class="help__item item-help">
@@ -209,7 +246,7 @@
                 You can also make a donation
               </h2>
               <p class="addition__text"></p>
-              <div class="addition__card">
+              <a href="#" class="addition__card">
                 <svg
                   width="30"
                   height="23"
@@ -223,7 +260,7 @@
                   />
                 </svg>
                 <span>8380 2880 8028 8791 7435</span>
-              </div>
+              </a>
               <p class="addition__description">
                 Legal information and lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Maecenas a ipsum at libero sagittis dignissim
@@ -234,35 +271,52 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="contacts">
         <div class="footer__container _container">
           <div class="footer__item item-footer">
             <h2 class="item-footer__title">For questions and suggestions</h2>
-            <div class="item-footer__data data-footer-item">
+            <a
+              href="mailto:email@shelter.com"
+              class="item-footer__data data-footer-item"
+            >
               <img src="./img/footer/icon-email.svg" alt="icon-email" />
               <span class="data-footer-item__text">email@shelter.com</span>
-            </div>
-            <div class="item-footer__data data-footer-item">
+            </a>
+            <a
+              href="tel:+136745677554"
+              class="item-footer__data data-footer-item"
+            >
               <img src="./img/footer/icon-phone.svg" alt="icon-phone" />
               <span class="data-footer-item__text">+13 674 567 75 54</span>
-            </div>
+            </a>
           </div>
           <div class="footer__item item-footer">
             <h2 class="item-footer__title">We are waiting for your visit</h2>
-            <div class="item-footer__data data-footer-item">
+            <a
+              href="https://www.google.com/maps/place/1+Central+Street,+Boston,+MA/@42.360102,-71.057083,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37ac899498793:0x611712ab198563c1!8m2!3d42.360102!4d-71.054894"
+              target="_blank"
+              class="item-footer__data data-footer-item"
+            >
               <img src="./img/footer/icon-marker.svg" alt="icon-marker" />
               <span class="data-footer-item__text"
                 >1 Central Street, Boston (entrance from the store)</span
               >
-            </div>
-            <div class="item-footer__data data-footer-item">
+            </a>
+            <a
+              href="https://www.google.com/maps/place/1+Central+Street,+Boston,+MA/@42.360102,-71.057083,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37ac899498793:0x611712ab198563c1!8m2!3d42.360102!4d-71.054894"
+              target="_blank"
+              class="item-footer__data data-footer-item"
+            >
               <img src="./img/footer/icon-marker.svg" alt="icon-marker" />
               <span class="data-footer-item__text">18 South Park, London </span>
-            </div>
+            </a>
           </div>
           <div class="footer__img">
             <img src="./img/footer.png" alt="puppy" />
           </div>
+        </div>
+        <div class="footer__image _ibg">
+          <img src="img/bg-footer.png" alt="cover" />
         </div>
       </footer>
     </div>

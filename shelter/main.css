@@ -73,6 +73,8 @@ body {
   font-size: 35px;
   line-height: 45.5px;
   letter-spacing: 0.06em;
+  color: #4C4C4C;
+
 }
 .text {
   font-family: "Arial";
@@ -310,15 +312,15 @@ body {
 
 .pagination-next {
   position: absolute;
-  left: 70px;
+  right: 70px;
   top: 50%;
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) ;
 }
 .pagination-back {
   position: absolute;
-  right: 70px;
+  left: 70px;
   top: 50%;
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) ;
 }
 
 .pagination-items {
@@ -328,4 +330,78 @@ body {
 }
 .pagination-items .pagination:not(:last-child) {
   margin-right: 20px;
+}
+
+@media (max-width: 1210px) {
+
+  .item-frends {
+    margin: 0 25px;
+}
+}
+
+@media (max-width: 970px) {
+  ._container {
+    padding: 0 35px ;
+}
+
+.item-footer{
+  flex:  1 1 50%;
+}
+.footer__img{
+  flex:  1 1 100%;
+  max-width: 300px;
+}
+.footer__container{
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.footer__img img {
+  bottom: 20px;
+}
+.footer {
+  padding: 40px 0 0px;
+}
+}
+@media (max-width: 721px) {
+  .footer__container {
+    gap: 10px;
+}
+}
+
+.burger{
+  display: none;
+}
+@media (max-width: 788px) {
+ .header__menu{
+  display: none;
+ }
+ .burger{
+  display: block;
+}
+}
+
+ @media (max-width: 560px) {
+  ._container {
+    padding: 0 20px;
+}
+
+.title{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.item-footer__title {
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0;
+ }
+ .footer {
+  padding: 30px 0 0px;
+}
 }

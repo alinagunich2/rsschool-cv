@@ -29,3 +29,30 @@
   border-bottom: 3px solid #f1cdb3;
   color: #292929;
 }
+@media (max-width: 771px) {
+  .friends__title {
+
+    margin-bottom: 30px;
+}
+.item-frends {
+  margin: 15px 15px;
+}
+.frends__items {
+  margin: -15px -15px;
+}
+.page__friends{
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.pagination-items .pagination:not(:last-child) {
+  margin-right: 10px;
+}
+.item-frends:nth-child(7),.item-frends:nth-child(8){
+  display: none;
+}
+}
+@media (max-width: 500px) {
+  .item-frends:nth-child(6),.item-frends:nth-child(5),.item-frends:nth-child(4){
+    display: none;
+  }
+}

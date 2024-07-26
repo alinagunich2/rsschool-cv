@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="./img/icon.png" />
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./style.css" />
+
+
   </head>
   <body>
     <div class="wrapper">
@@ -32,6 +34,9 @@
               </li>
             </ul>
           </nav>
+          <div class="burger">
+            <img src="./img/burger.svg" alt="burger">
+          </div>
         </div>
       </header>
       <main class="page">
@@ -86,19 +91,7 @@
               Our friends who are looking for a house
             </h2>
             <div class="frends__items-content">
-              <button class="pagination pagination-back">
-                <div class="pagination-cont">
-                  <svg
-                    width="14"
-                    height="6"
-                    viewBox="0 0 14 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
-                  </svg>
-                </div>
-              </button>
+              
               <ul class="frends__items">
                 <li class="frends__item item-frends">
                   <img
@@ -134,19 +127,35 @@
                   </button>
                 </li>
               </ul>
-              <button class="pagination pagination-next">
-                <div class="pagination-cont">
-                  <svg
-                    width="14"
-                    height="6"
-                    viewBox="0 0 14 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
-                  </svg>
-                </div>
-              </button>
+     <div class="frends__paginations">
+      <button class="pagination pagination-back">
+        <div class="pagination-cont">
+          <svg
+            width="14"
+            height="6"
+            viewBox="0 0 14 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+          </svg>
+        </div>
+      </button>
+      <button class="pagination pagination-next">
+        <div class="pagination-cont">
+          <svg
+            width="14"
+            height="6"
+            viewBox="0 0 14 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
+          </svg>
+        </div>
+      </button>
+     </div>
+             
             </div>
 
             <a href="pets.html" class="frends__btn btn btn-color">
@@ -245,7 +254,7 @@
               <h2 class="addition__title title">
                 You can also make a donation
               </h2>
-              <p class="addition__text"></p>
+              <p class="addition__text">Name of the bank / Type of bank account</p>
               <a href="#" class="addition__card">
                 <svg
                   width="30"

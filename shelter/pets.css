@@ -1,0 +1,31 @@
+.header {
+  background-color: #ffffff;
+}
+
+.header__logo p:first-child {
+  color: #545454;
+}
+.header__logo p:last-child {
+  color: #545454;
+}
+
+.menu__link {
+  color: #545454;
+}
+.menu__link:hover {
+  color: #292929;
+}
+.frends__items {
+  margin: -30px -20px;
+  flex-wrap: wrap;
+}
+.item-frends {
+  margin: 30px 20px;
+}
+.item-frends__btn {
+  cursor: pointer;
+}
+.menu__item:nth-child(2) .menu__link {
+  border-bottom: 3px solid #f1cdb3;
+  color: #292929;
+}
